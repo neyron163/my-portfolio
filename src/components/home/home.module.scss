@@ -30,19 +30,22 @@
   }
 
   .github {
-    color: #1E3C00;
-    transition: color .1s;
+    color: #1e3c00;
+  }
 
-    &:hover {
-      color: #fff;
-    }
+  .aviasales {
+    color: #8b6f12;
   }
 
   .here {
     margin-left: 10px;
     color: #4400b2;
-    transition: color .1s;
+  }
 
+  .here,
+  .aviasales,
+  .github {
+    transition: color 0.1s;
     &:hover {
       color: #fff;
     }
