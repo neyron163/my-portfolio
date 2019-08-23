@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render correctly 1`] = `
+<button
+  className="button link small"
+>
+   children 
+</button>
+`;
+
+exports[`<Button /> should render correctly if prop href exist 1`] = `
+<a
+  className="button link small"
+  href="link"
+>
+  child
+</a>
+`;
+
+exports[`<Button /> should render correctly if width long 1`] = `
+<button
+  className="button link long"
+>
+  child
+</button>
+`;
+
+exports[`<Button /> should render correctly if width medium 1`] = `
+<button
+  className="button link medium"
+>
+  child
+</button>
+`;

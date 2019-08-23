@@ -1,72 +1,46 @@
 .home {
   height: 100vh;
-  background: #47d1da;
-  text-align: center;
-  color: #fff;
+  overflow: hidden;
+  position: relative;
 
-  .progress {
-    font-size: 40px;
-    display: flex;
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.5;
+      z-index: 2;
+    }
+  }
+
+  .container {
+    position: relative;
     color: #fff;
-    justify-content: center;
-    font-weight: 700;
-    padding: 40px 0;
-
-    &::after {
-      content: " .";
-      animation: dots 1s steps(5, end) infinite;
-    }
+    max-width: 500px;
+    margin: calc(50vh - 60px) auto 0;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #fff;
   }
 
-  .description {
-    font-size: 25px;
+  .content {
+    padding: 60px 30px;
   }
 
-  .info {
+  .links {
+    margin-top: 60px;
     display: flex;
-    max-width: 400px;
     justify-content: space-between;
-    margin: 40px auto;
-  }
-
-  .github {
-    color: #1e3c00;
-  }
-
-  .aviasales {
-    color: #8b6f12;
-  }
-
-  .here {
-    margin-left: 10px;
-    color: #4400b2;
-  }
-
-  .here,
-  .aviasales,
-  .github {
-    transition: color 0.1s;
-    &:hover {
-      color: #fff;
-    }
-  }
-}
-
-@keyframes dots {
-  0%,
-  20% {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
-  }
-  40% {
-    color: white;
-    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
-  }
-  60% {
-    text-shadow: 0.25em 0 0 white, 0.5em 0 0 rgba(0, 0, 0, 0);
-  }
-  80%,
-  100% {
-    text-shadow: 0.25em 0 0 white, 0.5em 0 0 white;
   }
 }
