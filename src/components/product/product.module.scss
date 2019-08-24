@@ -1,5 +1,7 @@
 :local {
   .container {
+    position: relative;
+    z-index: 2;
     &:nth-child(2n) {
       .product {
         flex-direction: row-reverse;
